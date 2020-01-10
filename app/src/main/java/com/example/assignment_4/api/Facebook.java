@@ -1,6 +1,6 @@
 package com.example.assignment_4.api;
 
-import com.example.assignment_4.api.ApiUser;
+import com.example.assignment_4.model.ApiUser;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SignupActivity extends AppCompatActivity {
 
     RelativeLayout create, name, birthday, gender, mobile, pass, em, terms;
-    Button next1,next2,next3,next4,next5,next6,next7,next8;
+    Button next1, next2, next3, next4, next5, next6, next7, next8;
     TextView menu;
 
     @Override
@@ -47,13 +47,6 @@ public class SignupActivity extends AppCompatActivity {
                 menu.setText("Name");
                 create.setVisibility(View.GONE);
                 name.setVisibility(View.VISIBLE);
-                birthday.setVisibility(View.GONE);
-                gender.setVisibility(View.GONE);
-                mobile.setVisibility(View.GONE);
-                pass.setVisibility(View.GONE);
-                em.setVisibility(View.GONE);
-                terms.setVisibility(View.GONE);
-
             }
         });
 
@@ -61,14 +54,9 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 menu.setText("Birthday");
-                create.setVisibility(View.GONE);
                 name.setVisibility(View.GONE);
                 birthday.setVisibility(View.VISIBLE);
-                gender.setVisibility(View.GONE);
-                mobile.setVisibility(View.GONE);
-                pass.setVisibility(View.GONE);
-                em.setVisibility(View.GONE);
-                terms.setVisibility(View.GONE);
+
             }
         }));
 
@@ -76,14 +64,10 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 menu.setText("Gender");
-                create.setVisibility(View.GONE);
-                name.setVisibility(View.GONE);
+
                 birthday.setVisibility(View.GONE);
                 gender.setVisibility(View.VISIBLE);
-                mobile.setVisibility(View.GONE);
-                pass.setVisibility(View.GONE);
-                em.setVisibility(View.GONE);
-                terms.setVisibility(View.GONE);
+
             }
         }));
 
@@ -91,14 +75,8 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 menu.setText("Mobile Number");
-                create.setVisibility(View.GONE);
-                name.setVisibility(View.GONE);
-                birthday.setVisibility(View.GONE);
                 gender.setVisibility(View.GONE);
                 mobile.setVisibility(View.VISIBLE);
-                pass.setVisibility(View.GONE);
-                em.setVisibility(View.GONE);
-                terms.setVisibility(View.GONE);
             }
         }));
 
@@ -106,14 +84,8 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 menu.setText("Password");
-                create.setVisibility(View.GONE);
-                name.setVisibility(View.GONE);
-                birthday.setVisibility(View.GONE);
-                gender.setVisibility(View.GONE);
                 mobile.setVisibility(View.GONE);
                 pass.setVisibility(View.VISIBLE);
-                em.setVisibility(View.GONE);
-                terms.setVisibility(View.GONE);
             }
         }));
 
@@ -121,14 +93,8 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 menu.setText("Email");
-                create.setVisibility(View.GONE);
-                name.setVisibility(View.GONE);
-                birthday.setVisibility(View.GONE);
-                gender.setVisibility(View.GONE);
-                mobile.setVisibility(View.GONE);
                 pass.setVisibility(View.GONE);
                 em.setVisibility(View.VISIBLE);
-                terms.setVisibility(View.GONE);
             }
         }));
 
@@ -136,12 +102,6 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 menu.setText("Terms & Condition");
-                create.setVisibility(View.GONE);
-                name.setVisibility(View.GONE);
-                birthday.setVisibility(View.GONE);
-                gender.setVisibility(View.GONE);
-                mobile.setVisibility(View.GONE);
-                pass.setVisibility(View.GONE);
                 em.setVisibility(View.GONE);
                 terms.setVisibility(View.VISIBLE);
             }
@@ -151,7 +111,7 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SignupActivity.this, "New Account created Successfully...!!!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(SignupActivity.this,LoginActivity.class);
+                Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });

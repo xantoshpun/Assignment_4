@@ -1,4 +1,4 @@
-package com.example.assignment_4.api;
+package com.example.assignment_4.model;
 
 public class ApiUser {
     private String firstname;

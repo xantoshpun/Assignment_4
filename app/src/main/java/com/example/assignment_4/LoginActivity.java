@@ -10,8 +10,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import com.example.assignment_4.api.ApiUser;
+import com.example.assignment_4.model.ApiUser;
 import com.example.assignment_4.api.UserApi;
+
+import retrofit2.Retrofit;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -51,5 +53,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
 
 }

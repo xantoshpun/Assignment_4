@@ -1,5 +1,7 @@
 package com.example.assignment_4.api;
 
+import com.example.assignment_4.model.ApiUser;
+
 import java.io.IOException;
 
 import retrofit2.Call;
